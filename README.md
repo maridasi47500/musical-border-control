@@ -1,6 +1,14 @@
 # musical-border-control
-scan your suitcase
-✈️ airport‑border‑control
+- scan your suitcase
+- custom officer :
+- userhashit artitst title
+- userhasrythme hitid rythme
+- userhassignatuuremusicale motif-musical hitid styleid
+- style name
+performance userid styleid artist composer title 
+
+- 
+- ✈️ airport‑border‑control
 Where your music becomes your passport
 
 Un projet artistique et numérique qui imagine un monde où la musique n’est pas seulement un art, mais un signal détectable, un code d’identité, un passeport sonore.
