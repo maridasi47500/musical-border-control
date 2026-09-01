@@ -1,0 +1,2 @@
+{% extends 'base.html' %}{% block content %}<form  enctype="multipart/form-data" method="POST">
+<div class="field"><label for="somefieldstylename">name</label><input type="text" id="somefieldstylename" name="name"/></div><div class="actions"><input type="submit"/></div></form>{% for x in styles %}{{x["name"] }}{% endfor %}{% endblock %}{% block liens %}<a href="/">bienvenue</a><a href="/add_one_style"> add one style</a>{% endblock %}

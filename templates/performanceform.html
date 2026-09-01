@@ -1,0 +1,9 @@
+{% extends 'base.html' %}{% block content %}<form  enctype="multipart/form-data" method="POST">
+<div class="field"><label for="somefieldperformanceuser_id">user_id</label><input type="text" id="somefieldperformanceuser_id" name="user_id"/></div>
+<div class="field"><label for="somefieldstyle_id">style_id</label><select id="somefieldstyle_id" name="style_id"><option value="novalue">no value</option>
+{% for somestyle in touslesstyle %}
+<option value="{{ somestyle['id'] }}">{{ somestyle['name'] }}</option>{% endfor %}
+</select></div>
+<div class="field"><label for="somefieldperformanceartist">artist</label><input type="text" id="somefieldperformanceartist" name="artist"/></div>
+<div class="field"><label for="somefieldperformancecomposer">composer</label><input type="text" id="somefieldperformancecomposer" name="composer"/></div>
+<div class="field"><label for="somefieldperformancetitle">title</label><input type="text" id="somefieldperformancetitle" name="title"/></div><div class="actions"><input type="submit"/></div></form>{% for x in performances %}{{x["user_id"] }}{% endfor %}{% endblock %}{% block liens %}<a href="/">bienvenue</a><a href="/add_one_performance"> add one performance</a>{% endblock %}

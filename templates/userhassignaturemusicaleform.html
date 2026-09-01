@@ -1,0 +1,4 @@
+{% extends 'base.html' %}{% block content %}<form  enctype="multipart/form-data" method="POST">
+<div class="field"><label for="somefielduserhassignaturemusicalemotif_musical">motif_musical</label><input type="text" id="somefielduserhassignaturemusicalemotif_musical" name="motif_musical"/></div>
+<div class="field"><label for="somefielduserhassignaturemusicalehit_id">hit_id</label><input type="text" id="somefielduserhassignaturemusicalehit_id" name="hit_id"/></div>
+<div class="field"><label for="somefielduserhassignaturemusicalestyle_id">style_id</label><input type="text" id="somefielduserhassignaturemusicalestyle_id" name="style_id"/></div><div class="actions"><input type="submit"/></div></form>{% for x in userhassignaturemusicales %}{{x["motif_musical"] }}{% endfor %}{% endblock %}{% block liens %}<a href="/">bienvenue</a><a href="/add_one_userhassignaturemusicale"> add one userhassignaturemusicale</a>{% endblock %}

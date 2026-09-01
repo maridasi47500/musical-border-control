@@ -1,0 +1,6 @@
+{% extends 'base.html' %}{% block content %}<form  enctype="multipart/form-data" method="POST">
+<div class="field"><label for="somefieldcustom_officername">name</label><input type="text" id="somefieldcustom_officername" name="name"/></div>
+<div class="field"><label for="somefieldcountry_id">country_id</label><select id="somefieldcountry_id" name="country_id"><option value="novalue">no value</option>
+{% for somecountry in touslescountry %}
+<option value="{{ somecountry['id'] }}">{{ somecountry['name'] }}</option>{% endfor %}
+</select></div><div class="actions"><input type="submit"/></div></form>{% for x in custom_officers %}{{x["name"] }}{% endfor %}{% endblock %}{% block liens %}<a href="/">bienvenue</a><a href="/add_one_custom_officer"> add one custom_officer</a>{% endblock %}

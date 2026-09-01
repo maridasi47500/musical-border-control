@@ -1,0 +1,6 @@
+{% extends 'base.html' %}{% block content %}<form  enctype="multipart/form-data" method="POST">
+<div class="field"><label for="somefieldmusicalinstrument_id">musicalinstrument_id</label><select id="somefieldmusicalinstrument_id" name="musicalinstrument_id"><option value="novalue">no value</option>
+{% for somemusicalinstrument in touslesmusicalinstrument %}
+<option value="{{ somemusicalinstrument['id'] }}">{{ somemusicalinstrument['name'] }}</option>{% endfor %}
+</select></div>
+<div class="field"><label for="somefielduserhasmusicalinstrumentuser_id">user_id</label><input type="text" id="somefielduserhasmusicalinstrumentuser_id" name="user_id"/></div><div class="actions"><input type="submit"/></div></form>{% for x in userhasmusicalinstruments %}{{x["musicalinstrument_id"] }}{% endfor %}{% endblock %}{% block liens %}<a href="/">bienvenue</a><a href="/add_one_userhasmusicalinstrument"> add one userhasmusicalinstrument</a>{% endblock %}
